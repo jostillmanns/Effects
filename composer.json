@@ -1,0 +1,23 @@
+{
+    "name": "joschka.tillmanns/effects",
+    "description": "Framework that let's you deal with side effect driven architectures in a sane manner",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joschka Tillmanns",
+            "email": "joschka@tillmanns.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Effects\\": "src/",
+	    "PDO\\": "examples/pdo"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^6.4",
+        "ramsey/uuid": "^3.7",
+        "monolog/monolog": "^1.23"
+    }
+}
