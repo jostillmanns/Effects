@@ -5,7 +5,7 @@ namespace PDO\Effects;
 
 use Effects\Effect;
 
-class Logger implements Effect
+class LogEntry implements Effect
 {
 	private $message;
 

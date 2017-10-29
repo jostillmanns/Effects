@@ -5,7 +5,7 @@ namespace PDO;
 
 use DateTime;
 use Effects\EffectList;
-use PDO\Effects\Logger;
+use PDO\Effects\LogEntry;
 use PDO\Effects\Updater;
 
 class TodoItemUpdater
@@ -16,6 +16,6 @@ class TodoItemUpdater
 			->setUpdateTime($updateTime)
 			->setChecked($checked);
 
-		return new EffectList(new Updater($item), new Logger('todo item created'));
+		return new EffectList(new Updater($item), new LogEntry('todo item created'));
 	}
 }

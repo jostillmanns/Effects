@@ -6,7 +6,7 @@ namespace PDO;
 use DateTime;
 use Effects\EffectList;
 use PDO\Effects\Creator;
-use PDO\Effects\Logger;
+use PDO\Effects\LogEntry;
 
 class TodoItemCreator
 {
@@ -26,6 +26,6 @@ class TodoItemCreator
 		->setCreateTime($createTime)
 		->setDescription($description);
 
-		return new EffectList(new Creator($item), new Logger('todo item created'));
+		return new EffectList(new Creator($item), new LogEntry('todo item created'));
 	}
 }
