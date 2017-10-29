@@ -7,7 +7,7 @@ use Effects\Effect;
 use Effects\EffectHandler;
 use Monolog\Logger;
 
-class LoggerHandler implements EffectHandler
+class LogHandler implements EffectHandler
 {
 	public function run(Effect $effect)
 	{
